@@ -11,7 +11,9 @@ import java.nio.channels.SocketChannel;
 //参考 https://blog.csdn.net/difffate/article/details/69660666
 public class Server {
     private static String Hello(String input) {
-        String message = String.format("<h1>Hello</h1><div>your request is: <div><code>%s</code><div></div>", input);
+        String message = String.format("<h1>Hello</h1>" +
+                "<div>your request is: <div>" +
+                "<pre><code>%s</code></pre><div></div>", input);
 
         var HTTPFormat = "HTTP/1.1 200 OK\r\n" +
                 "Content-Type: text/html\r\n" +
