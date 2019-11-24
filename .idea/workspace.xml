@@ -81,7 +81,7 @@
       <deployment>
         <artifact name="Servlet:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/servlets/" />
+            <option name="CONTEXT_PATH" value="/servlets" />
           </settings>
         </artifact>
       </deployment>
