@@ -9,12 +9,12 @@ public class main {
     }
     static void readAnnotation(AnnotatedElement element) {
         try {
-            System.out.println("Annotation element values: \n");
-            if (element.isAnnotationPresent(UserDefinedAnnotation.class)) {
+            System.out.println("Annotation element values:");
+            if (element.isAnnotationPresent(AnnotationDef.class)) {
                 // getAnnotation returns Annotation type
                 var singleAnnotation =
-                        element.getAnnotation(UserDefinedAnnotation.class);
-                var header = (UserDefinedAnnotation) singleAnnotation;
+                        element.getAnnotation(AnnotationDef.class);
+                var header = (AnnotationDef) singleAnnotation;
 
                 System.out.println("value: " + header.value());
             }

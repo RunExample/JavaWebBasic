@@ -1,5 +1,5 @@
 package com.example;
 
-@UserDefinedAnnotation(value = "abc")
+@AnnotationDef(value = "abc")
 public class UseAnnotation {
 }

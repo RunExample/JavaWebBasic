@@ -13,10 +13,6 @@ import java.lang.annotation.*;
         ElementType.LOCAL_VARIABLE,
 })
 @Inherited
-@interface UserDefinedAnnotation {
+public @interface AnnotationDef {
     String value() default "have a try";
-}
-
-public class AnnotationDef {
-
 }
